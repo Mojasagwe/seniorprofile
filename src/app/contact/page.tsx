@@ -32,7 +32,7 @@ export default function ContactPage() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setIsSubmitted(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -45,7 +45,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Me</h1>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Let's discuss your project or opportunities.
+            Let&apos;s discuss your project or opportunities.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export default function ContactPage() {
               <div className="rounded-2xl bg-green-50 p-8 text-center">
                 <h2 className="text-lg font-semibold text-green-800">Thank you for your message!</h2>
                 <p className="mt-2 text-sm text-green-700">
-                  I'll get back to you as soon as possible.
+                  I&apos;ll get back to you as soon as possible.
                 </p>
                 <button
                   type="button"
